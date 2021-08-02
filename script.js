@@ -120,9 +120,10 @@ function game () {
         document.getElementById('retry').onclick = () => {location.reload()};
     }
     let testButton = document.getElementById("test");
-    testButton.onclick = ()=>{
-        alert("hey bro");
+    function test() {
+        alert("hey");
     }
+    testButton.onclick = test(); 
 }
 
 let snake = new Snake();
