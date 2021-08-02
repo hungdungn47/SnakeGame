@@ -119,9 +119,10 @@ function game () {
         document.getElementById("lose-execute").classList.remove("hide");
         document.getElementById('retry').onclick = () => {location.reload()};
     }
-    document.getElementById("test").onclick = () => {
-        alert("heybro");
-    };
+    let testButton = document.getElementById("test");
+    testButton.onclick = ()=>{
+        alert("hey bro");
+    }
 }
 
 let snake = new Snake();
