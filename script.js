@@ -4,6 +4,9 @@ const cellSize = 20;
 
 canvas.style.border="1px solid black";
 let score = 0;
+document.getElementById("test").onclick = () => {
+    alert("heybro");
+};
 class Snake {
     constructor() {
         this.x = 10;
