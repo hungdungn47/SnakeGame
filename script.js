@@ -4,9 +4,7 @@ const cellSize = 20;
 
 canvas.style.border="1px solid black";
 let score = 0;
-document.getElementById("test").onclick = () => {
-    alert("heybro");
-};
+
 class Snake {
     constructor() {
         this.x = 10;
@@ -121,6 +119,9 @@ function game () {
         document.getElementById("lose-execute").classList.remove("hide");
         document.getElementById('retry').onclick = () => {location.reload()};
     }
+    document.getElementById("test").onclick = () => {
+        alert("heybro");
+    };
 }
 
 let snake = new Snake();
